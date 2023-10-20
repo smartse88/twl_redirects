@@ -1,0 +1,159 @@
+{
+    "createdBy": "Redirector v3.5.3",
+    "createdAt": "2023-10-20T13:55:29.970Z",
+    "redirects": [
+        {
+            "description": "cambridge",
+            "exampleUrl": "https://www.cambridge.org/core/journals/weed-science/article/abs/glyphosate-environmental-fate-and-impact/85C5628F98E45060AE0B7046F11361E2",
+            "exampleResult": "https://www-cambridge-org.wikipedialibrary.idm.oclc.org/core/journals/weed-science/article/glyphosate-environmental-fate-and-impact/85C5628F98E45060AE0B7046F11361E2",
+            "error": null,
+            "includePattern": "https:\\/\\/www\\.cambridge\\.org\\/core\\/journals\\/([a-zA-Z0-9.-]+)\\/article\\/abs\\/(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www-cambridge-org.wikipedialibrary.idm.oclc.org/core/journals/$1/article/$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "wiley",
+            "exampleUrl": "https://resjournals.onlinelibrary.wiley.com/doi/abs/10.1111/j.1752-4598.2012.00196.x",
+            "exampleResult": "https://resjournals-onlinelibrary-wiley-com.wikipedialibrary.idm.oclc.org/10.1111/j.1752-4598.2012.00196.x",
+            "error": null,
+            "includePattern": "https:\\/\\/([a-zA-Z0-9.-]+)\\.onlinelibrary\\.wiley\\.com\\/doi\\/abs\\/(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://$1-onlinelibrary-wiley-com.wikipedialibrary.idm.oclc.org/$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "annual reviews",
+            "exampleUrl": "https://www.annualreviews.org/doi/abs/10.1146/annurev-ecolsys-102320-095612",
+            "exampleResult": "https://www-annualreviews-org.wikipedialibrary.idm.oclc.org/doi/abs/10.1146/annurev-ecolsys-102320-095612",
+            "error": null,
+            "includePattern": "https:\\/\\/www.annualreviews.org/doi\\/abs\\/(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www-annualreviews-org.wikipedialibrary.idm.oclc.org/doi/abs/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "bmj",
+            "exampleUrl": "https://www.bmj.com/content/341/bmj.c3564",
+            "exampleResult": "https://www-bmj-com.wikipedialibrary.idm.oclc.org/content/341/bmj.c3564",
+            "error": null,
+            "includePattern": "(?<=\\www.bmj.com/content)(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www-bmj-com.wikipedialibrary.idm.oclc.org/content$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "springer",
+            "exampleUrl": "https://link.springer.com/book/10.1007/978-3-030-50530-1",
+            "exampleResult": "https://link-springer-com.wikipedialibrary.idm.oclc.org/book/10.1007/978-3-030-50530-1",
+            "error": null,
+            "includePattern": "(?<=\\link.springer.com/)([a-zA-Z0-9.-]+)(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://link-springer-com.wikipedialibrary.idm.oclc.org/$1$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "sciencedirect",
+            "exampleUrl": "https://www.sciencedirect.com/science/article/pii/S0959378018307854",
+            "exampleResult": "https://www-sciencedirect-com.wikipedialibrary.idm.oclc.org/science/article/pii/S0959378018307854",
+            "error": null,
+            "includePattern": "(?<=\\www.sciencedirect.com)\\/science/article/pii\\/(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www-sciencedirect-com.wikipedialibrary.idm.oclc.org/science/article/pii/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "science",
+            "exampleUrl": "https://www.science.org/doi/10.1126/scisignal.add6834",
+            "exampleResult": "https://www-science-org.wikipedialibrary.idm.oclc.org/doi/10.1126/scisignal.add6834",
+            "error": null,
+            "includePattern": "(?<=\\www.science.org)\\/doi\\/(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www-science-org.wikipedialibrary.idm.oclc.org/doi/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "nature",
+            "exampleUrl": "https://www.nature.com/articles/s41416-022-01866-8",
+            "exampleResult": "https://www-nature-com.wikipedialibrary.idm.oclc.org/articles/s41416-022-01866-8",
+            "error": null,
+            "includePattern": "(?<=\\www.nature.com)\\/articles\\/(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www-nature-com.wikipedialibrary.idm.oclc.org/articles/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "pnas",
+            "exampleUrl": "https://www.pnas.org/doi/abs/10.1073/pnas.1811437116",
+            "exampleResult": "https://www-pnas-org.wikipedialibrary.idm.oclc.org/doi/10.1073/pnas.1811437116",
+            "error": null,
+            "includePattern": "(?<=\\www.pnas.org/doi)\\/abs\\/(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www-pnas-org.wikipedialibrary.idm.oclc.org/doi/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        }
+    ]
+}
