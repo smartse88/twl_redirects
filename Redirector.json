@@ -3,7 +3,7 @@
     "createdAt": "2023-10-20T13:55:29.970Z",
     "redirects": [
         {
-            "description": "cambridge",
+            "description": "Cambridge",
             "exampleUrl": "https://www.cambridge.org/core/journals/weed-science/article/abs/glyphosate-environmental-fate-and-impact/85C5628F98E45060AE0B7046F11361E2",
             "exampleResult": "https://www-cambridge-org.wikipedialibrary.idm.oclc.org/core/journals/weed-science/article/glyphosate-environmental-fate-and-impact/85C5628F98E45060AE0B7046F11361E2",
             "error": null,
@@ -20,7 +20,7 @@
             ]
         },
         {
-            "description": "wiley",
+            "description": "Wiley",
             "exampleUrl": "https://resjournals.onlinelibrary.wiley.com/doi/abs/10.1111/j.1752-4598.2012.00196.x",
             "exampleResult": "https://resjournals-onlinelibrary-wiley-com.wikipedialibrary.idm.oclc.org/10.1111/j.1752-4598.2012.00196.x",
             "error": null,
@@ -37,7 +37,7 @@
             ]
         },
         {
-            "description": "annual reviews",
+            "description": "Annual Reviews",
             "exampleUrl": "https://www.annualreviews.org/doi/abs/10.1146/annurev-ecolsys-102320-095612",
             "exampleResult": "https://www-annualreviews-org.wikipedialibrary.idm.oclc.org/doi/abs/10.1146/annurev-ecolsys-102320-095612",
             "error": null,
@@ -54,7 +54,7 @@
             ]
         },
         {
-            "description": "bmj",
+            "description": "BMJ",
             "exampleUrl": "https://www.bmj.com/content/341/bmj.c3564",
             "exampleResult": "https://www-bmj-com.wikipedialibrary.idm.oclc.org/content/341/bmj.c3564",
             "error": null,
@@ -71,7 +71,7 @@
             ]
         },
         {
-            "description": "springer",
+            "description": "Springer",
             "exampleUrl": "https://link.springer.com/book/10.1007/978-3-030-50530-1",
             "exampleResult": "https://link-springer-com.wikipedialibrary.idm.oclc.org/book/10.1007/978-3-030-50530-1",
             "error": null,
@@ -88,11 +88,11 @@
             ]
         },
         {
-            "description": "sciencedirect",
+            "description": "Sciencedirect",
             "exampleUrl": "https://www.sciencedirect.com/science/article/pii/S0959378018307854",
             "exampleResult": "https://www-sciencedirect-com.wikipedialibrary.idm.oclc.org/science/article/pii/S0959378018307854",
             "error": null,
-            "includePattern": "(?<=\\www.sciencedirect.com)\\/science/article/pii\\/(.+)",
+            "includePattern": "(?<=\\www.sciencedirect.com)/science/article/(?:abs/)?pii\\/(.+)",
             "excludePattern": "",
             "patternDesc": "",
             "redirectUrl": "https://www-sciencedirect-com.wikipedialibrary.idm.oclc.org/science/article/pii/$1",
@@ -105,7 +105,7 @@
             ]
         },
         {
-            "description": "science",
+            "description": "Science",
             "exampleUrl": "https://www.science.org/doi/10.1126/scisignal.add6834",
             "exampleResult": "https://www-science-org.wikipedialibrary.idm.oclc.org/doi/10.1126/scisignal.add6834",
             "error": null,
@@ -122,7 +122,7 @@
             ]
         },
         {
-            "description": "nature",
+            "description": "Nature",
             "exampleUrl": "https://www.nature.com/articles/s41416-022-01866-8",
             "exampleResult": "https://www-nature-com.wikipedialibrary.idm.oclc.org/articles/s41416-022-01866-8",
             "error": null,
@@ -139,7 +139,7 @@
             ]
         },
         {
-            "description": "pnas",
+            "description": "PNAS",
             "exampleUrl": "https://www.pnas.org/doi/abs/10.1073/pnas.1811437116",
             "exampleResult": "https://www-pnas-org.wikipedialibrary.idm.oclc.org/doi/10.1073/pnas.1811437116",
             "error": null,
@@ -147,6 +147,74 @@
             "excludePattern": "",
             "patternDesc": "",
             "redirectUrl": "https://www-pnas-org.wikipedialibrary.idm.oclc.org/doi/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "JSTOR",
+            "exampleUrl": "https://www.jstor.org/stable/26873531",
+            "exampleResult": "https://www-jstor-org.wikipedialibrary.idm.oclc.org/stable/26873531",
+            "error": null,
+            "includePattern": "https://www.jstor.org/stable/(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www-jstor-org.wikipedialibrary.idm.oclc.org/stable/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "Project MUSE",
+            "exampleUrl": "https://muse.jhu.edu/pub/304/article/900301",
+            "exampleResult": "https://muse-jhu-edu.wikipedialibrary.idm.oclc.org/article/900301",
+            "error": null,
+            "includePattern": "https://muse.jhu.edu/(pub/.+/)?article/(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://muse-jhu-edu.wikipedialibrary.idm.oclc.org/$1article/$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "Taylor & Francis",
+            "exampleUrl": "https://www.tandfonline.com/doi/full/10.1080/08989621.2022.2071154",
+            "exampleResult": "https://www-tandfonline-com.wikipedialibrary.idm.oclc.org/doi/full/10.1080/08989621.2022.2071154",
+            "error": null,
+            "includePattern": "https://www.tandfonline.com/doi/(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www-tandfonline-com.wikipedialibrary.idm.oclc.org/doi/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "Oxford Reference",
+            "exampleUrl": "https://www.oxfordreference.com/display/10.1093/acref/9780197669419.001.0001/acref-9780197669419-e-1",
+            "exampleResult": "https://www-oxfordreference-com.wikipedialibrary.idm.oclc.org/display/10.1093/acref/9780197669419.001.0001/acref-9780197669419-e-1",
+            "error": null,
+            "includePattern": "https://www.oxfordreference.com/(views?|display)/(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www-oxfordreference-com.wikipedialibrary.idm.oclc.org/$1/$2",
             "patternType": "R",
             "processMatches": "noProcessing",
             "disabled": false,
