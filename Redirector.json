@@ -7,10 +7,10 @@
             "exampleUrl": "https://www.cambridge.org/core/journals/weed-science/article/abs/glyphosate-environmental-fate-and-impact/85C5628F98E45060AE0B7046F11361E2",
             "exampleResult": "https://www-cambridge-org.wikipedialibrary.idm.oclc.org/core/journals/weed-science/article/glyphosate-environmental-fate-and-impact/85C5628F98E45060AE0B7046F11361E2",
             "error": null,
-            "includePattern": "https:\\/\\/www\\.cambridge\\.org\\/core\\/journals\\/([a-zA-Z0-9.-]+)\\/article\\/abs\\/(.+)",
+            "includePattern": "https://www\\.cambridge\\.org/core/(books|journals)/(.+)",
             "excludePattern": "",
             "patternDesc": "",
-            "redirectUrl": "https://www-cambridge-org.wikipedialibrary.idm.oclc.org/core/journals/$1/article/$2",
+            "redirectUrl": "https://www-cambridge-org.wikipedialibrary.idm.oclc.org/core/$1/$2",
             "patternType": "R",
             "processMatches": "noProcessing",
             "disabled": false,
@@ -22,12 +22,12 @@
         {
             "description": "Wiley",
             "exampleUrl": "https://resjournals.onlinelibrary.wiley.com/doi/abs/10.1111/j.1752-4598.2012.00196.x",
-            "exampleResult": "https://resjournals-onlinelibrary-wiley-com.wikipedialibrary.idm.oclc.org/10.1111/j.1752-4598.2012.00196.x",
+            "exampleResult": "https://onlinelibrary-wiley-com.wikipedialibrary.idm.oclc.org/doi/abs/10.1111/j.1752-4598.2012.00196.x",
             "error": null,
-            "includePattern": "https:\\/\\/([a-zA-Z0-9.-]+)\\.onlinelibrary\\.wiley\\.com\\/doi\\/abs\\/(.+)",
+            "includePattern": "https://([a-z0-9]+\\.)?onlinelibrary\\.wiley\\.com/doi/(.+)",
             "excludePattern": "",
-            "patternDesc": "",
-            "redirectUrl": "https://$1-onlinelibrary-wiley-com.wikipedialibrary.idm.oclc.org/$2",
+            "patternDesc": "URLs MAY contain e.g. \"resjournals.onlinelibrary...\" but the redirect doesn't require them to resolve successfully. Leaving that part out avoids needing two rules (the hard-coded \"-\", if and only if...)",
+            "redirectUrl": "https://onlinelibrary-wiley-com.wikipedialibrary.idm.oclc.org/doi/$2",
             "patternType": "R",
             "processMatches": "noProcessing",
             "disabled": false,
@@ -190,7 +190,7 @@
             ]
         },
         {
-            "description": "Taylor & Francis",
+            "description": "Taylor&Francis",
             "exampleUrl": "https://www.tandfonline.com/doi/full/10.1080/08989621.2022.2071154",
             "exampleResult": "https://www-tandfonline-com.wikipedialibrary.idm.oclc.org/doi/full/10.1080/08989621.2022.2071154",
             "error": null,
@@ -215,6 +215,74 @@
             "excludePattern": "",
             "patternDesc": "",
             "redirectUrl": "https://www-oxfordreference-com.wikipedialibrary.idm.oclc.org/$1/$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "De Gruyter",
+            "exampleUrl": "https://www.degruyter.com/document/doi/10.7312/bash18296-005/html",
+            "exampleResult": "https://www-degruyter-com.wikipedialibrary.idm.oclc.org/document/doi/10.7312/bash18296-005/html",
+            "error": null,
+            "includePattern": "https://www.degruyter.com/document/(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www-degruyter-com.wikipedialibrary.idm.oclc.org/document/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "Cochrane",
+            "exampleUrl": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008165.pub5/full",
+            "exampleResult": "https://www-cochranelibrary-com.wikipedialibrary.idm.oclc.org/cdsr/doi/10.1002/14651858.CD008165.pub5/full",
+            "error": null,
+            "includePattern": "https://www.cochranelibrary.com/cdsr/doi/(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www-cochranelibrary-com.wikipedialibrary.idm.oclc.org/cdsr/doi/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "EbscoHost",
+            "exampleUrl": "http://search.ebscohost.com/login.aspx?direct=true&db=a9h&AN=169165188&site=ehost-live",
+            "exampleResult": "https://search-ebscohost-com.wikipedialibrary.idm.oclc.org/login.aspx?direct=true&db=a9h&AN=169165188&site=ehost-live",
+            "error": null,
+            "includePattern": "https?://(.+)?ebscohost.com/login.aspx(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://search-ebscohost-com.wikipedialibrary.idm.oclc.org/login.aspx$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "Edinburgh UP",
+            "exampleUrl": "https://www.euppublishing.com/doi/full/10.3366/cost.2017.0024",
+            "exampleResult": "https://www-euppublishing-com.wikipedialibrary.idm.oclc.org/doi/full/10.3366/cost.2017.0024",
+            "error": null,
+            "includePattern": "https://www.euppublishing.com/doi/(.+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www-euppublishing-com.wikipedialibrary.idm.oclc.org/doi/$1",
             "patternType": "R",
             "processMatches": "noProcessing",
             "disabled": false,
